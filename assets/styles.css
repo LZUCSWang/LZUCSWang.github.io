@@ -69,7 +69,7 @@ a {
 }
 
 .shell {
-  width: min(1180px, calc(100% - 36px));
+  width: min(1380px, calc(100% - 40px));
   margin: 0 auto;
 }
 
@@ -211,8 +211,8 @@ input:focus-visible {
 
 .layout {
   display: grid;
-  grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
-  gap: 24px;
+  grid-template-columns: minmax(320px, 380px) minmax(720px, 1fr);
+  gap: 20px;
   align-items: start;
 }
 
@@ -225,8 +225,8 @@ input:focus-visible {
 }
 
 .sidebar {
-  position: sticky;
-  top: 96px;
+  position: relative;
+  min-width: 0;
   align-self: start;
 }
 
@@ -250,7 +250,7 @@ input:focus-visible {
 }
 
 .hero-copy {
-  padding: clamp(30px, 6vw, 66px);
+  padding: clamp(28px, 4vw, 48px);
   animation: rise-in 520ms ease both;
 }
 
@@ -344,7 +344,7 @@ h1 {
 .status-panel {
   position: relative;
   overflow: hidden;
-  padding: 28px;
+  padding: 24px;
   animation: rise-in 620ms 80ms ease both;
 }
 
@@ -415,8 +415,8 @@ h1 {
   display: grid;
   grid-template-columns: 44px minmax(0, 1fr);
   gap: 18px;
-  min-height: 210px;
-  padding: 24px;
+  min-height: 0;
+  padding: 22px;
   border: 1px solid var(--line);
   border-radius: var(--radius-card);
   background: var(--surface);
@@ -746,10 +746,6 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .sidebar {
-    position: static;
-  }
-
   .resume-section.wide {
     grid-column: auto;
   }
@@ -761,7 +757,7 @@ h1 {
 
 @media (max-width: 620px) {
   .shell {
-    width: min(100% - 24px, 1180px);
+    width: calc(100% - 20px);
   }
 
   .topbar {
@@ -781,7 +777,7 @@ h1 {
   .hero-copy,
   .status-panel,
   .resume-section {
-    padding: 22px;
+    padding: 18px;
   }
 }
 
