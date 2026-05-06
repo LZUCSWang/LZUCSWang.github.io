@@ -15,7 +15,7 @@ window.PROFILE_DATA = {
       documentTitle: "Xianyi Wang",
       eyebrow: "Resume Website",
       summary:
-        "Master's student in Computer Science and Technology at Lanzhou University, interested in software engineering, intelligent systems, and practical developer tools.",
+        "Master's student in Computer Science and Technology at Lanzhou University, working on reinforcement learning, combinatorial optimization, and neural combinatorial optimization.",
       snapshot: "Snapshot",
       exploreAction: "Explore",
       searchTitle: "Search",
@@ -33,7 +33,7 @@ window.PROFILE_DATA = {
       documentTitle: "王贤义 | Xianyi Wang",
       eyebrow: "简历主页",
       summary:
-        "兰州大学计算机科学与技术专业硕士研究生，关注软件工程、智能系统以及实用开发工具。",
+        "兰州大学计算机科学与技术专业硕士研究生，研究方向主要包括强化学习、组合优化与神经组合优化算法。",
       snapshot: "基本信息",
       exploreAction: "浏览",
       searchTitle: "搜索",
@@ -102,12 +102,12 @@ window.PROFILE_DATA = {
       id: "interests",
       icon: "RI",
       title: { en: "Research Interests", zh: "研究兴趣" },
-      keywords: "research interests ai software engineering tools 研究 兴趣 软件工程 智能系统 工具",
+      keywords: "research interests reinforcement learning combinatorial optimization neural combinatorial optimization RL CO NCO 研究兴趣 强化学习 组合优化 神经组合优化算法",
       items: [
         {
           text: {
-            en: "Software engineering, intelligent systems, machine learning, and tools that make research and development smoother.",
-            zh: "软件工程、智能系统、机器学习，以及让科研和开发更顺畅的工具。",
+            en: "My research focuses on reinforcement learning, combinatorial optimization, and neural combinatorial optimization, with particular interest in learning-based algorithms for large-scale decision-making and optimization problems.",
+            zh: "我的研究主要聚焦于强化学习、组合优化与神经组合优化算法，尤其关注面向大规模决策与优化问题的学习型算法设计。",
           },
         },
       ],
