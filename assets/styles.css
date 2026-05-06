@@ -162,6 +162,7 @@ a {
 .primary-link::after,
 .secondary-link::after,
 .mini-links a::after,
+.paper-links a::after,
 .setting-row::after {
   position: absolute;
   inset: 50%;
@@ -179,6 +180,7 @@ a {
 .primary-link:active::after,
 .secondary-link:active::after,
 .mini-links a:active::after,
+.paper-links a:active::after,
 .setting-row:active::after {
   animation: tap-ripple 420ms ease-out;
 }
@@ -187,6 +189,7 @@ a {
 .primary-link:active,
 .secondary-link:active,
 .mini-links a:active,
+.paper-links a:active,
 .setting-row:active {
   transform: scale(0.97);
 }
@@ -195,6 +198,7 @@ a {
 .primary-link:focus-visible,
 .secondary-link:focus-visible,
 .mini-links a:focus-visible,
+.paper-links a:focus-visible,
 .setting-row:focus-visible,
 input:focus-visible {
   outline: 3px solid var(--focus);
@@ -468,6 +472,45 @@ h1 {
 .timeline-item {
   padding-top: 14px;
   border-top: 1px solid var(--line);
+}
+
+.paper-authors {
+  margin-top: 10px;
+}
+
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.paper-links a {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-control);
+  color: var(--accent-strong);
+  font-weight: 800;
+  text-decoration: none;
+  background: var(--surface-strong);
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 160ms ease,
+    box-shadow 180ms ease;
+}
+
+.paper-links a:hover,
+.paper-links a:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(31, 35, 40, 0.1);
 }
 
 .tag-list {

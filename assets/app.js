@@ -28,10 +28,12 @@ const translations = {
     projectOneText:
       "Built a lightweight bilingual personal site with dark mode, search, settings, responsive layout, and selected public resume content.",
     publicationsTitle: "Publications",
-    publicationStatus: "To be updated",
-    publicationPlaceholderTitle: "Publication list",
-    publicationPlaceholderText:
-      "Add paper titles, venues, years, author order, and links here when you want to publish them on the site.",
+    publicationOneMeta: "arXiv:2602.00488 · 2026",
+    publicationOneTitle:
+      "OD-DEAL: Dynamic Expert-Guided Adversarial Learning with Online Decomposition for Scalable Capacitated Vehicle Routing",
+    publicationOneAuthors:
+      "Dongbin Jiao, Zisheng Chen, Xianyi Wang, Jintao Shi, Shengcai Liu, and Shi Yan",
+    arxivLink: "arXiv",
     linksTitle: "Quick Links",
     searchTitle: "Search",
     searchLabel: "Search public profile sections",
@@ -70,10 +72,12 @@ const translations = {
     projectOneText:
       "构建轻量级双语个人网站，包含夜间模式、搜索、设置、响应式布局和筛选后的公开简历内容。",
     publicationsTitle: "论文发表",
-    publicationStatus: "待补充",
-    publicationPlaceholderTitle: "论文列表",
-    publicationPlaceholderText:
-      "之后可以在这里补充论文题目、发表会议/期刊、年份、作者顺序和链接。",
+    publicationOneMeta: "arXiv:2602.00488 · 2026",
+    publicationOneTitle:
+      "OD-DEAL: Dynamic Expert-Guided Adversarial Learning with Online Decomposition for Scalable Capacitated Vehicle Routing",
+    publicationOneAuthors:
+      "Dongbin Jiao, Zisheng Chen, Xianyi Wang, Jintao Shi, Shengcai Liu, and Shi Yan",
+    arxivLink: "arXiv",
     linksTitle: "快捷链接",
     searchTitle: "搜索",
     searchLabel: "搜索公开主页内容",
@@ -116,8 +120,8 @@ const searchItems = [
   {
     id: "publications",
     titleKey: "publicationsTitle",
-    textKey: "publicationPlaceholderText",
-    keywords: "publications papers research publication 论文 发表 科研",
+    textKey: "publicationOneTitle",
+    keywords: "publications papers research publication OD-DEAL CVRP arXiv 2602.00488 capacitated vehicle routing online decomposition 论文 发表 科研 车辆路径",
   },
   {
     id: "links",
