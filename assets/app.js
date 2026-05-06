@@ -1,7 +1,7 @@
 const translations = {
   en: {
     documentTitle: "Xianyi Wang",
-    eyebrow: "Personal Website",
+    eyebrow: "Resume Website",
     summary:
       "Master's student in Computer Science and Technology at Lanzhou University, interested in software engineering, intelligent systems, and practical developer tools.",
     snapshot: "Snapshot",
@@ -12,25 +12,30 @@ const translations = {
     major: "Major",
     majorValue: "Computer Science and Technology",
     exploreAction: "Explore",
-    interestsTitle: "Interests",
+    educationSectionTitle: "Education",
+    educationSectionMeta: "Lanzhou University · Master's Student",
+    educationSectionText:
+      "Major in Computer Science and Technology, with interests in software engineering, intelligent systems, and developer tools.",
+    interestsTitle: "Research Interests",
     interestsText:
       "Software engineering, intelligent systems, machine learning, and tools that make research and development smoother.",
     skillsTitle: "Skills",
     skillsText:
-      "Python, Java, web development, Linux, Git, and building clean project workflows.",
-    privacyTitle: "Privacy",
-    privacyText:
-      "This page keeps only public academic and professional basics: no avatar, phone number, address, or private identifiers.",
-    languagesTitle: "Languages",
-    languagesText:
-      "Chinese and English for study, reading, technical communication, and collaboration.",
-    statusTitle: "Current Status",
-    statusText:
-      "Graduate student focused on building a steady technical foundation and turning ideas into useful projects.",
+      "Building clean project workflows and practical tools for study, research, and development.",
+    projectsTitle: "Projects",
+    projectOneMeta: "Personal Website · GitHub Pages",
+    projectOneTitle: "Resume-style personal homepage",
+    projectOneText:
+      "Built a lightweight bilingual personal site with dark mode, search, settings, responsive layout, and selected public resume content.",
+    publicationsTitle: "Publications",
+    publicationStatus: "To be updated",
+    publicationPlaceholderTitle: "Publication list",
+    publicationPlaceholderText:
+      "Add paper titles, venues, years, author order, and links here when you want to publish them on the site.",
     linksTitle: "Quick Links",
     searchTitle: "Search",
     searchLabel: "Search public profile sections",
-    searchPlaceholder: "Try skills, research, privacy",
+    searchPlaceholder: "Try projects, papers, skills",
     settingsTitle: "Settings",
     languageSetting: "Language",
     themeSetting: "Theme",
@@ -41,7 +46,7 @@ const translations = {
   },
   zh: {
     documentTitle: "王贤义 | Xianyi Wang",
-    eyebrow: "个人主页",
+    eyebrow: "简历主页",
     summary:
       "兰州大学计算机科学与技术专业硕士研究生，关注软件工程、智能系统以及实用开发工具。",
     snapshot: "基本信息",
@@ -52,20 +57,27 @@ const translations = {
     major: "专业",
     majorValue: "计算机科学与技术",
     exploreAction: "浏览",
-    interestsTitle: "兴趣方向",
+    educationSectionTitle: "教育背景",
+    educationSectionMeta: "兰州大学 · 硕士研究生",
+    educationSectionText: "计算机科学与技术专业，关注软件工程、智能系统和开发工具。",
+    interestsTitle: "研究兴趣",
     interestsText: "软件工程、智能系统、机器学习，以及让科研和开发更顺畅的工具。",
     skillsTitle: "技能方向",
-    skillsText: "Python、Java、Web 开发、Linux、Git，以及清晰可靠的项目工作流。",
-    privacyTitle: "隐私边界",
-    privacyText: "此页面只保留公开的学业与专业基础信息，不展示头像、电话、住址或私人身份信息。",
-    languagesTitle: "语言",
-    languagesText: "中文和英文，用于学习、阅读、技术交流与协作。",
-    statusTitle: "当前状态",
-    statusText: "硕士研究生，持续夯实技术基础，并把想法转化成有用的项目。",
+    skillsText: "构建清晰的项目工作流，以及面向学习、科研和开发的实用工具。",
+    projectsTitle: "项目经历",
+    projectOneMeta: "个人主页 · GitHub Pages",
+    projectOneTitle: "简历式个人主页",
+    projectOneText:
+      "构建轻量级双语个人网站，包含夜间模式、搜索、设置、响应式布局和筛选后的公开简历内容。",
+    publicationsTitle: "论文发表",
+    publicationStatus: "待补充",
+    publicationPlaceholderTitle: "论文列表",
+    publicationPlaceholderText:
+      "之后可以在这里补充论文题目、发表会议/期刊、年份、作者顺序和链接。",
     linksTitle: "快捷链接",
     searchTitle: "搜索",
     searchLabel: "搜索公开主页内容",
-    searchPlaceholder: "试试 技能、研究、隐私",
+    searchPlaceholder: "试试 项目、论文、技能",
     settingsTitle: "设置",
     languageSetting: "语言",
     themeSetting: "主题",
@@ -77,6 +89,12 @@ const translations = {
 };
 
 const searchItems = [
+  {
+    id: "education",
+    titleKey: "educationSectionTitle",
+    textKey: "educationSectionText",
+    keywords: "education lanzhou university master computer science 教育 兰州大学 硕士 计算机",
+  },
   {
     id: "interests",
     titleKey: "interestsTitle",
@@ -90,28 +108,22 @@ const searchItems = [
     keywords: "skills python java web linux git 技能",
   },
   {
-    id: "privacy",
-    titleKey: "privacyTitle",
-    textKey: "privacyText",
-    keywords: "privacy no avatar phone address 隐私 头像 电话 地址",
+    id: "projects",
+    titleKey: "projectsTitle",
+    textKey: "projectOneText",
+    keywords: "projects github pages personal website bilingual dark mode search 项目 个人主页 双语 夜间模式 搜索",
   },
   {
-    id: "languages",
-    titleKey: "languagesTitle",
-    textKey: "languagesText",
-    keywords: "languages chinese english 语言 中文 英文",
-  },
-  {
-    id: "status",
-    titleKey: "statusTitle",
-    textKey: "statusText",
-    keywords: "status graduate student lzu 当前 状态 硕士 兰州大学",
+    id: "publications",
+    titleKey: "publicationsTitle",
+    textKey: "publicationPlaceholderText",
+    keywords: "publications papers research publication 论文 发表 科研",
   },
   {
     id: "links",
     titleKey: "linksTitle",
     textKey: "linksTitle",
-    keywords: "links github skills privacy contact 链接 技能 隐私",
+    keywords: "links github projects publications skills 链接 项目 论文 技能",
   },
 ];
 

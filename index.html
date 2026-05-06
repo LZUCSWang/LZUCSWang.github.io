@@ -33,7 +33,7 @@
       <main class="page">
         <section class="hero" aria-label="Profile">
           <div class="hero-copy">
-            <p class="eyebrow" data-i18n="eyebrow">Personal Website</p>
+            <p class="eyebrow" data-i18n="eyebrow">Resume Website</p>
             <h1>Xianyi Wang</h1>
             <p class="name-cn">王贤义</p>
             <p class="summary" data-i18n="summary">
@@ -46,7 +46,7 @@
                 <span aria-hidden="true">◆</span>
                 GitHub
               </a>
-              <a class="secondary-link" href="#interests">
+              <a class="secondary-link" href="#projects">
                 <span aria-hidden="true">✦</span>
                 <span data-i18n="exploreAction">Explore</span>
               </a>
@@ -77,59 +77,90 @@
           </aside>
         </section>
 
-        <section class="content-grid" aria-label="Public profile details">
-          <article class="info-card searchable" data-keywords="research interests ai software engineering tools" id="interests">
-            <span class="card-icon" aria-hidden="true">✦</span>
-            <h2 data-i18n="interestsTitle">Interests</h2>
-            <p data-i18n="interestsText">
-              Software engineering, intelligent systems, machine learning, and
-              tools that make research and development smoother.
-            </p>
+        <section class="resume-grid" aria-label="Resume details">
+          <article class="resume-section searchable" data-keywords="education lanzhou university master computer science" id="education">
+            <span class="card-icon" aria-hidden="true">ED</span>
+            <div>
+              <h2 data-i18n="educationSectionTitle">Education</h2>
+              <p class="resume-meta" data-i18n="educationSectionMeta">
+                Lanzhou University · Master's Student
+              </p>
+              <p data-i18n="educationSectionText">
+                Major in Computer Science and Technology, with interests in
+                software engineering, intelligent systems, and developer tools.
+              </p>
+            </div>
           </article>
 
-          <article class="info-card searchable" data-keywords="skills python java web linux git" id="skills">
-            <span class="card-icon" aria-hidden="true">⌘</span>
-            <h2 data-i18n="skillsTitle">Skills</h2>
-            <p data-i18n="skillsText">
-              Python, Java, web development, Linux, Git, and building clean
-              project workflows.
-            </p>
+          <article class="resume-section searchable" data-keywords="research interests ai software engineering machine learning tools" id="interests">
+            <span class="card-icon" aria-hidden="true">RI</span>
+            <div>
+              <h2 data-i18n="interestsTitle">Research Interests</h2>
+              <p data-i18n="interestsText">
+                Software engineering, intelligent systems, machine learning, and
+                tools that make research and development smoother.
+              </p>
+            </div>
           </article>
 
-          <article class="info-card searchable" data-keywords="privacy public profile no avatar no phone no address" id="privacy">
-            <span class="card-icon" aria-hidden="true">◇</span>
-            <h2 data-i18n="privacyTitle">Privacy</h2>
-            <p data-i18n="privacyText">
-              This page keeps only public academic and professional basics:
-              no avatar, phone number, address, or private identifiers.
-            </p>
+          <article class="resume-section searchable" data-keywords="skills python java web linux git" id="skills">
+            <span class="card-icon" aria-hidden="true">SK</span>
+            <div>
+              <h2 data-i18n="skillsTitle">Skills</h2>
+              <ul class="tag-list" aria-label="Skills">
+                <li>Python</li>
+                <li>Java</li>
+                <li>Web</li>
+                <li>Linux</li>
+                <li>Git</li>
+              </ul>
+              <p data-i18n="skillsText">
+                Building clean project workflows and practical tools for study,
+                research, and development.
+              </p>
+            </div>
           </article>
 
-          <article class="info-card searchable" data-keywords="languages chinese english communication" id="languages">
-            <span class="card-icon" aria-hidden="true">文</span>
-            <h2 data-i18n="languagesTitle">Languages</h2>
-            <p data-i18n="languagesText">
-              Chinese and English for study, reading, technical communication,
-              and collaboration.
-            </p>
+          <article class="resume-section searchable wide" data-keywords="projects github pages personal website frontend bilingual dark mode search" id="projects">
+            <span class="card-icon" aria-hidden="true">PR</span>
+            <div>
+              <h2 data-i18n="projectsTitle">Projects</h2>
+              <div class="timeline-item">
+                <p class="resume-meta" data-i18n="projectOneMeta">Personal Website · GitHub Pages</p>
+                <h3 data-i18n="projectOneTitle">Resume-style personal homepage</h3>
+                <p data-i18n="projectOneText">
+                  Built a lightweight bilingual personal site with dark mode,
+                  search, settings, responsive layout, and selected public
+                  resume content.
+                </p>
+              </div>
+            </div>
           </article>
 
-          <article class="info-card searchable" data-keywords="status graduate student lzu computer science" id="status">
-            <span class="card-icon" aria-hidden="true">●</span>
-            <h2 data-i18n="statusTitle">Current Status</h2>
-            <p data-i18n="statusText">
-              Graduate student focused on building a steady technical foundation
-              and turning ideas into useful projects.
-            </p>
+          <article class="resume-section searchable wide" data-keywords="publications papers research publication" id="publications">
+            <span class="card-icon" aria-hidden="true">PB</span>
+            <div>
+              <h2 data-i18n="publicationsTitle">Publications</h2>
+              <div class="timeline-item">
+                <p class="resume-meta" data-i18n="publicationStatus">To be updated</p>
+                <h3 data-i18n="publicationPlaceholderTitle">Publication list</h3>
+                <p data-i18n="publicationPlaceholderText">
+                  Add paper titles, venues, years, author order, and links here
+                  when you want to publish them on the site.
+                </p>
+              </div>
+            </div>
           </article>
 
-          <article class="info-card searchable" data-keywords="links github profile" id="links">
+          <article class="resume-section searchable" data-keywords="links github profile skills projects publications" id="links">
             <span class="card-icon" aria-hidden="true">↗</span>
-            <h2 data-i18n="linksTitle">Quick Links</h2>
-            <div class="mini-links">
-              <a href="https://github.com/LZUCSWang">GitHub</a>
-              <a href="#skills" data-i18n="skillsTitle">Skills</a>
-              <a href="#privacy" data-i18n="privacyTitle">Privacy</a>
+            <div>
+              <h2 data-i18n="linksTitle">Quick Links</h2>
+              <div class="mini-links">
+                <a href="https://github.com/LZUCSWang">GitHub</a>
+                <a href="#projects" data-i18n="projectsTitle">Projects</a>
+                <a href="#publications" data-i18n="publicationsTitle">Publications</a>
+              </div>
             </div>
           </article>
         </section>
@@ -146,7 +177,7 @@
         </div>
         <label class="search-field">
           <span data-i18n="searchLabel">Search public profile sections</span>
-          <input type="search" data-search-input placeholder="Try skills, research, privacy">
+          <input type="search" data-search-input placeholder="Try projects, papers, skills">
         </label>
         <div class="search-results" data-search-results aria-live="polite"></div>
       </form>
