@@ -8,34 +8,171 @@
     <link rel="stylesheet" href="assets/styles.css">
   </head>
   <body>
-    <main class="page">
-      <section class="intro" aria-label="Profile">
-        <p class="eyebrow">Personal Website</p>
-        <h1>Xianyi Wang</h1>
-        <p class="name-cn">王贤义</p>
-        <p class="summary">
-          Computer science student and builder, exploring software engineering,
-          intelligent systems, and useful tools.
-        </p>
-        <dl class="details">
-          <div>
-            <dt>Education</dt>
-            <dd>Master's Student</dd>
+    <div class="shell">
+      <header class="topbar" aria-label="Site controls">
+        <a class="brand" href="#" aria-label="Xianyi Wang home">
+          <span class="brand-mark" aria-hidden="true">XW</span>
+          <span class="brand-text">Xianyi Wang</span>
+        </a>
+        <nav class="controls" aria-label="Quick actions">
+          <button class="icon-button" type="button" data-action="search" aria-label="Search">
+            <span aria-hidden="true">⌕</span>
+          </button>
+          <button class="icon-button" type="button" data-action="language" aria-label="Switch language">
+            <span data-lang-label>中</span>
+          </button>
+          <button class="icon-button" type="button" data-action="theme" aria-label="Switch theme">
+            <span data-theme-icon aria-hidden="true">◐</span>
+          </button>
+          <button class="icon-button" type="button" data-action="settings" aria-label="Settings">
+            <span aria-hidden="true">⚙</span>
+          </button>
+        </nav>
+      </header>
+
+      <main class="page">
+        <section class="hero" aria-label="Profile">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="eyebrow">Personal Website</p>
+            <h1>Xianyi Wang</h1>
+            <p class="name-cn">王贤义</p>
+            <p class="summary" data-i18n="summary">
+              Master's student in Computer Science and Technology at Lanzhou
+              University, interested in software engineering, intelligent
+              systems, and practical developer tools.
+            </p>
+            <div class="hero-actions" aria-label="Profile links">
+              <a class="primary-link" href="https://github.com/LZUCSWang">
+                <span aria-hidden="true">◆</span>
+                GitHub
+              </a>
+              <a class="secondary-link" href="#interests">
+                <span aria-hidden="true">✦</span>
+                <span data-i18n="exploreAction">Explore</span>
+              </a>
+            </div>
           </div>
-          <div>
-            <dt>University</dt>
-            <dd>Lanzhou University</dd>
-          </div>
-          <div>
-            <dt>Major</dt>
-            <dd>Computer Science and Technology</dd>
-          </div>
-        </dl>
-        <div class="links" aria-label="Profile links">
-          <a href="https://github.com/LZUCSWang">GitHub</a>
-          <a href="mailto:2949242759@qq.com">Email</a>
+
+          <aside class="status-panel" aria-label="Profile snapshot">
+            <div class="signal-stack" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <p class="status-kicker" data-i18n="snapshot">Snapshot</p>
+            <dl class="snapshot-list">
+              <div>
+                <dt data-i18n="education">Education</dt>
+                <dd data-i18n="educationValue">Master's Student</dd>
+              </div>
+              <div>
+                <dt data-i18n="university">University</dt>
+                <dd data-i18n="universityValue">Lanzhou University</dd>
+              </div>
+              <div>
+                <dt data-i18n="major">Major</dt>
+                <dd data-i18n="majorValue">Computer Science and Technology</dd>
+              </div>
+            </dl>
+          </aside>
+        </section>
+
+        <section class="content-grid" aria-label="Public profile details">
+          <article class="info-card searchable" data-keywords="research interests ai software engineering tools" id="interests">
+            <span class="card-icon" aria-hidden="true">✦</span>
+            <h2 data-i18n="interestsTitle">Interests</h2>
+            <p data-i18n="interestsText">
+              Software engineering, intelligent systems, machine learning, and
+              tools that make research and development smoother.
+            </p>
+          </article>
+
+          <article class="info-card searchable" data-keywords="skills python java web linux git" id="skills">
+            <span class="card-icon" aria-hidden="true">⌘</span>
+            <h2 data-i18n="skillsTitle">Skills</h2>
+            <p data-i18n="skillsText">
+              Python, Java, web development, Linux, Git, and building clean
+              project workflows.
+            </p>
+          </article>
+
+          <article class="info-card searchable" data-keywords="privacy public profile no avatar no phone no address" id="privacy">
+            <span class="card-icon" aria-hidden="true">◇</span>
+            <h2 data-i18n="privacyTitle">Privacy</h2>
+            <p data-i18n="privacyText">
+              This page keeps only public academic and professional basics:
+              no avatar, phone number, address, or private identifiers.
+            </p>
+          </article>
+
+          <article class="info-card searchable" data-keywords="languages chinese english communication" id="languages">
+            <span class="card-icon" aria-hidden="true">文</span>
+            <h2 data-i18n="languagesTitle">Languages</h2>
+            <p data-i18n="languagesText">
+              Chinese and English for study, reading, technical communication,
+              and collaboration.
+            </p>
+          </article>
+
+          <article class="info-card searchable" data-keywords="status graduate student lzu computer science" id="status">
+            <span class="card-icon" aria-hidden="true">●</span>
+            <h2 data-i18n="statusTitle">Current Status</h2>
+            <p data-i18n="statusText">
+              Graduate student focused on building a steady technical foundation
+              and turning ideas into useful projects.
+            </p>
+          </article>
+
+          <article class="info-card searchable" data-keywords="links github profile" id="links">
+            <span class="card-icon" aria-hidden="true">↗</span>
+            <h2 data-i18n="linksTitle">Quick Links</h2>
+            <div class="mini-links">
+              <a href="https://github.com/LZUCSWang">GitHub</a>
+              <a href="#skills" data-i18n="skillsTitle">Skills</a>
+              <a href="#privacy" data-i18n="privacyTitle">Privacy</a>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <dialog class="panel-dialog" data-dialog="search" aria-labelledby="search-title">
+      <form method="dialog">
+        <div class="dialog-head">
+          <h2 id="search-title" data-i18n="searchTitle">Search</h2>
+          <button class="icon-button" value="close" aria-label="Close search">
+            <span aria-hidden="true">×</span>
+          </button>
         </div>
-      </section>
-    </main>
+        <label class="search-field">
+          <span data-i18n="searchLabel">Search public profile sections</span>
+          <input type="search" data-search-input placeholder="Try skills, research, privacy">
+        </label>
+        <div class="search-results" data-search-results aria-live="polite"></div>
+      </form>
+    </dialog>
+
+    <dialog class="panel-dialog" data-dialog="settings" aria-labelledby="settings-title">
+      <form method="dialog">
+        <div class="dialog-head">
+          <h2 id="settings-title" data-i18n="settingsTitle">Settings</h2>
+          <button class="icon-button" value="close" aria-label="Close settings">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="settings-list">
+          <button class="setting-row" type="button" data-action="language">
+            <span data-i18n="languageSetting">Language</span>
+            <strong data-setting-language>English</strong>
+          </button>
+          <button class="setting-row" type="button" data-action="theme">
+            <span data-i18n="themeSetting">Theme</span>
+            <strong data-setting-theme>Light</strong>
+          </button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="assets/app.js"></script>
   </body>
 </html>
