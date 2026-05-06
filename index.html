@@ -30,17 +30,17 @@
         </nav>
       </header>
 
-      <main class="page">
-        <section class="hero" aria-label="Profile">
-          <div class="hero-copy">
+      <main class="page layout">
+        <aside class="sidebar" aria-label="Basic profile">
+          <section class="hero-copy">
             <p class="eyebrow" data-ui="eyebrow">Resume Website</p>
             <h1 data-profile-name>Xianyi Wang</h1>
             <p class="name-cn" data-profile-cn>王贤义</p>
             <p class="summary" data-ui="summary"></p>
             <div class="hero-actions" data-hero-links aria-label="Profile links"></div>
-          </div>
+          </section>
 
-          <aside class="status-panel" aria-label="Profile snapshot">
+          <section class="status-panel" aria-label="Profile snapshot">
             <div class="signal-stack" aria-hidden="true">
               <span></span>
               <span></span>
@@ -48,10 +48,14 @@
             </div>
             <p class="status-kicker" data-ui="snapshot">Snapshot</p>
             <dl class="snapshot-list" data-snapshot></dl>
-          </aside>
-        </section>
+          </section>
 
-        <section class="resume-grid" data-sections aria-label="Resume details"></section>
+          <section class="sidebar-sections" data-sidebar-sections aria-label="Basic information"></section>
+        </aside>
+
+        <section class="main-content" aria-label="Main resume content">
+          <div class="main-section-list" data-main-sections></div>
+        </section>
       </main>
     </div>
 

@@ -124,15 +124,21 @@ function renderItem(item) {
 }
 
 function renderSections() {
-  const grid = document.querySelector("[data-sections]");
-  if (!grid) return;
+  const sidebar = document.querySelector("[data-sidebar-sections]");
+  const main = document.querySelector("[data-main-sections]");
+  if (!sidebar || !main) return;
 
-  grid.innerHTML = "";
+  sidebar.innerHTML = "";
+  main.innerHTML = "";
+
+  const sidebarIds = new Set(["education", "interests", "skills", "links"]);
 
   data.sections.forEach((section) => {
     const article = createElement(
       "article",
-      `resume-section searchable${section.wide ? " wide" : ""}`,
+      `resume-section searchable${section.wide ? " wide" : ""}${
+        sidebarIds.has(section.id) ? " compact" : ""
+      }`,
     );
     article.id = section.id;
     article.dataset.keywords = section.keywords || "";
@@ -151,7 +157,12 @@ function renderSections() {
     }
 
     article.append(content);
-    grid.append(article);
+
+    if (sidebarIds.has(section.id)) {
+      sidebar.append(article);
+    } else {
+      main.append(article);
+    }
   });
 }
 
