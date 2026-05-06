@@ -224,19 +224,19 @@ input:focus-visible {
   gap: 18px;
 }
 
+.sidebar {
+  position: sticky;
+  top: 96px;
+  align-self: start;
+}
+
 .main-content {
   min-width: 0;
 }
 
 .main-section-list {
   grid-template-columns: 1fr;
-}
-
-.hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 390px);
-  gap: 34px;
-  align-items: center;
+  align-content: start;
 }
 
 .hero-copy,
@@ -742,9 +742,12 @@ h1 {
 
 @media (max-width: 900px) {
   .layout,
-  .hero,
   .resume-grid {
     grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
   }
 
   .resume-section.wide {
