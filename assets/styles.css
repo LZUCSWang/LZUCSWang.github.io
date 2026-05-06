@@ -474,6 +474,16 @@ h1 {
   border-top: 1px solid var(--line);
 }
 
+.resume-section .timeline-item:first-of-type {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.resume-section .resume-meta + h3,
+.resume-section .resume-meta + p {
+  margin-top: 6px;
+}
+
 .paper-authors {
   margin-top: 10px;
 }
