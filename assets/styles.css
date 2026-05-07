@@ -247,6 +247,7 @@ input:focus-visible {
 .hero-copy,
 .status-panel,
 .panel-dialog {
+  min-width: 0;
   border: 1px solid var(--line);
   border-radius: var(--radius-card);
   background: var(--surface);
@@ -275,7 +276,8 @@ input:focus-visible {
 
 h1 {
   margin: 0;
-  font-size: clamp(3rem, 9vw, 7.6rem);
+  overflow-wrap: anywhere;
+  font-size: 3.75rem;
   line-height: 0.92;
 }
 
@@ -766,6 +768,10 @@ h1 {
   .page {
     padding-top: 48px;
   }
+
+  h1 {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 620px) {
@@ -791,6 +797,10 @@ h1 {
   .status-panel,
   .resume-section {
     padding: 18px;
+  }
+
+  h1 {
+    font-size: 3.1rem;
   }
 }
 
